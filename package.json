@@ -1,0 +1,26 @@
+{
+  "name": "cleanthewindow",
+  "version": "0.1.0",
+  "description": "Threshold-triggered context window rollover for Claude Code and WorkBuddy: write a structured handoff, get a clean window, keep working.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "ctw-supervisor": "src/supervisor/ctw-supervisor.js",
+    "ctw-chain": "src/supervisor/ctw-chain.js",
+    "ctw-install": "src/adapters/install.js"
+  },
+  "scripts": {
+    "test": "node --test test/core.test.js test/chain.test.js",
+    "supervisor": "node src/supervisor/ctw-supervisor.js",
+    "chain": "node src/supervisor/ctw-chain.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "src",
+    "templates",
+    "config.default.json",
+    "README.md"
+  ]
+}

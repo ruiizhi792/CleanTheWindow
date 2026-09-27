@@ -1,0 +1,22 @@
+{
+  "threshold": {
+    "warnPercent": 60,
+    "rolloverPercent": 75,
+    "absoluteFloorTokens": 30000,
+    "contextWindowTokens": 200000
+  },
+  "handoff": {
+    "dir": ".ctw",
+    "maxAgeSeconds": 900,
+    "requireSameCwd": true,
+    "draft": {
+      "maxUserMessages": 8,
+      "maxAssistantChars": 1200,
+      "maxFileEntries": 15,
+      "maxCommandEntries": 10
+    }
+  },
+  "supervisor": {
+    "pollSeconds": 30
+  }
+}
